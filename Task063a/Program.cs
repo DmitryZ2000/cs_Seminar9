@@ -12,5 +12,6 @@ void PrintNumbers(int start, int end)
 
 // Console.Write("Введите любое целое число ");
 // int number = Convert.ToInt32(Console.ReadLine());
-int number = 6;
-PrintNumbers(1, 6);
+int endNumber = 6;
+int startNumber = 1;
+PrintNumbers(startNumber, endNumber);

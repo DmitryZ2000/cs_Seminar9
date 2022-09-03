@@ -4,14 +4,10 @@
 // 45 -> 9
 
 int SumNumber(int number)
-{   
-    int result;
-    if (number < 10)
-    {
-        return number;
-    } 
-    result = number % 10;
-    return result = result + SumNumber(number /10);
+{
+    if (number < 10) return number;
+    int result = number % 10;
+    return result + SumNumber(number / 10);
 }
 
 int sum = SumNumber(2345);

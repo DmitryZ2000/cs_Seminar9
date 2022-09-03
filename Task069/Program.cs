@@ -3,17 +3,13 @@
 // A = 3; B = 5 -> 243 (3⁵)
 // A = 2; B = 3 -> 8
 
-int a = 3;
-int b = 4;
+int a = 2;
+int b = 5;
 
 int Power(int a, int b)
 {
-    if (b == 1)
-    {
-        // return a;
-        return a*Power(a, b-1);
-    }
-    // return a*Power(a, b-1);
+    if (b == 0) return 1;
+     return a*Power(a, b-1);
 }
 
 Console.WriteLine(Power(a,b));
