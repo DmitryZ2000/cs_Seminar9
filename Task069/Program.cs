@@ -9,7 +9,7 @@ int b = 5;
 int Power(int a, int b)
 {
     if (b == 0) return 1;
-     return a*Power(a, b-1);
+    return a * Power(a, b - 1);
 }
 
-Console.WriteLine(Power(a,b));
+Console.WriteLine(Power(a, b));
