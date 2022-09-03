@@ -4,14 +4,15 @@
 // 45 -> 9
 
 int SumNumber(int number)
-{
+{   
+    int result;
     if (number < 10)
     {
-               
-    }
-    number =number /10;
-    SumNumber(number % 10);
+        return number;
+    } 
+    result = number % 10;
+    return result = result + SumNumber(number /10);
 }
 
-int sum = SumNumber(275);
+int sum = SumNumber(2345);
 Console.WriteLine(sum);
